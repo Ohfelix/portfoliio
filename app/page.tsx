@@ -1,10 +1,49 @@
+'use client'
+import { CarCard, CustomFilter, SearchBar } from '@components'
 import Hero from '@components/Hero'
-import React from 'react'
+import { fetchCars } from '@utils'
 
-const Home = () => {
+
+export default async function Home() {
+  const allCars = await fetchCars();
+
+  const isDataEmpty = !Array.isArray(allCars) || allCars.length < 1 || !allCars;
+
   return (
-   <Hero/>
+    <main className='overflow-hidden'>
+      <Hero />
+      <div className='mt-12 padding-x padding-y max-width id="discover'>
+        <div className='home_text=container'>
+          <h1 className='text-4x1 font-extrabold'> Car catalogue </h1>
+          <p>Explore the cars you might like</p>
+        </div>
+        <div className='home__filters'>
+          <SearchBar />
+          <div className='home__filter-container'>
+            <CustomFilter title='fuel' />
+            <CustomFilter title='fuel' />
+
+          </div>
+        </div>
+        {!isDataEmpty ? (
+          <section>
+            <div className='home__cars-wrapper'>
+              {allCars?.map((car) => (
+                <CarCard car={car}/>
+              ))}
+            </div>
+          </section>
+        ) : (
+          <div className='home__error-container'>
+            <h2 className='text-black text-xl font-bold'>
+              Não tem esse carro não !
+              <p>{allCars?.message}</p>
+            </h2>
+          </div>
+        )}
+
+      </div>
+    </main>
   )
 }
 
-export default Home

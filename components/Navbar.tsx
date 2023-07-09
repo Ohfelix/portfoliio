@@ -19,7 +19,7 @@ const Navbar = () => {
                 <CustomButton
                     title="Sing In"
                     btnType='button'
-                    containerStyles="text-primary-blue rounded-full bg-white min-w[130px]" />
+                    containerStyles="bg-primary-blue rounded-full text-white  min-w[130px]" />
             </nav>
 
         </header>
