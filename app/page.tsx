@@ -1,7 +1,10 @@
+import Hero from '@components/Hero'
+import React from 'react'
 
-
-export default function Home() {
+const Home = () => {
   return (
-    <div>Home</div>
+   <Hero/>
   )
 }
+
+export default Home
