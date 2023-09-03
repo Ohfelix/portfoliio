@@ -83,7 +83,7 @@ export const footerLinks = [
   {
     title: "Company",
     links: [
-      { title: "Events", url: "/" },
+      { title: "Project", url: "/project" },
       { title: "Blog", url: "/" },
       { title: "Podcast", url: "/" },
       { title: "Invite a friend", url: "/" },
@@ -92,10 +92,10 @@ export const footerLinks = [
   {
     title: "Socials",
     links: [
-      { title: "Discord", url: "/" },
-      { title: "Instagram", url: "/" },
-      { title: "Twitter", url: "/" },
-      { title: "Facebook", url: "/" },
+      { title: "Linkedin", url: "https://www.linkedin.com/in/leandro-galdino-felix-880401161/" },
+      { title: "Instagram", url:"https://www.instagram.com/oleandrofelix/" },
+      { title: "Youtube", url:"https://www.youtube.com/channel/UCUuNfXl_M98_BAu-82HYsgg" },
+      { title: "Spotify", url:"https://open.spotify.com/user/leandroofelix90?si=tMKtQ-pgSxGyYTiEt357xg&nd=1" },
     ],
   },
 ];
