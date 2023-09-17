@@ -220,3 +220,21 @@
   @apply cursor-default select-none py-2 pl-10 pr-4;
 }
 /* END: search manufacturer styles */
+.container {
+  @apply max-w-full w-[1440px] px-5 mx-auto;
+}
+
+.btn {
+@layer bg-primaryColor py-[15px] px-[35px] rounded-[50px] text-white font-[600] mt-[38px];
+}
+.heading {
+@layer text-[44px] leading-[30px] font-[400] text-textColor mt-[18px];
+}
+.text__para {
+ @layer text-[18px] leading-[30px] font-[400] text-textColor mt-[18px];
+}
+.header {
+}
+.hero__section {
+@layer bg-image-[url('./assets/images/background.png')bg-no-repeat bg-center bg-cover];
+}

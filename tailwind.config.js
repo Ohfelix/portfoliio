@@ -17,6 +17,10 @@ module.exports = {
         "primary-blue": {
           DEFAULT: "#2B59FF",
           100: "#F5F8FF",
+          primaryColor: "#22c55e",
+          secondColor: "#86198f",
+          headingColor: "#181A1E",
+          textColor: "#4E545F"
         },
         "secondary-orange": "#f79761",
         "light-white": {
@@ -28,6 +32,9 @@ module.exports = {
       backgroundImage: {
         'pattern': "url('/pattern.png')",
         'hero-bg': "url('/hero-bg.png')"
+      },  
+      boxShadow: {
+        panelShadow: "rgba(17, 17, 46, 0.15) 0px 40px 100px 0px",
       }
     },
   },

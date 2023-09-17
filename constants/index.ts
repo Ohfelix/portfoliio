@@ -70,6 +70,14 @@ export const fuels = [
   },
 ];
 
+const navLinks = [
+  { path: "/home", url: "Home" },
+  { path: "/contact", url: "Contact" },
+  { path: "/services", url: "Services" },
+  { path: "/login", url: "Login" },
+  { path: "/singup", url: "Sing Up" },
+];
+
 export const footerLinks = [
   {
     title: "About",
@@ -92,10 +100,19 @@ export const footerLinks = [
   {
     title: "Socials",
     links: [
-      { title: "Linkedin", url: "https://www.linkedin.com/in/leandro-galdino-felix-880401161/" },
-      { title: "Instagram", url:"https://www.instagram.com/oleandrofelix/" },
-      { title: "Youtube", url:"https://www.youtube.com/channel/UCUuNfXl_M98_BAu-82HYsgg" },
-      { title: "Spotify", url:"https://open.spotify.com/user/leandroofelix90?si=tMKtQ-pgSxGyYTiEt357xg&nd=1" },
+      {
+        title: "Linkedin",
+        url: "https://www.linkedin.com/in/leandro-galdino-felix-880401161/",
+      },
+      { title: "Instagram", url: "https://www.instagram.com/oleandrofelix/" },
+      {
+        title: "Youtube",
+        url: "https://www.youtube.com/channel/UCUuNfXl_M98_BAu-82HYsgg",
+      },
+      {
+        title: "Spotify",
+        url: "https://open.spotify.com/user/leandroofelix90?si=tMKtQ-pgSxGyYTiEt357xg&nd=1",
+      },
     ],
   },
 ];

@@ -22,5 +22,5 @@ export {
     SearchManufacturer,
     CarCard,
     Cardetails,
-    ShowMore
+    ShowMore,
 }
