@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-
+import { Carrousel } from "@components";
 
 const About = () => {
   const backgroundImageStyle = {
@@ -31,23 +31,8 @@ const About = () => {
           compartilhar minhas primeiras impressões e dicas para aqueles que se
           interessam ou têm dúvidas sobre!
         </p>
-      </div>   
-        <div>
-        <img src="/jiujitso.jpg" alt="" />
       </div>
-
-      <div className="p-3">
-        <h2 className="text-2xl font-bold">Escolher uma boa academia</h2>
-        <p className="text-2xl p-3">
-          {" "}
-          Escolher uma boa academia de jiu-jitsu é fundamental porque oferece
-          instrutores qualificados, instalações adequadas, uma comunidade
-          acolhedora, variedade de treinamento, valores éticos, progressão
-          estruturada, foco na segurança e uma reputação sólida. Isso assegura
-          uma experiência de aprendizado eficaz e gratificante no jiu-jitsu.
-        </p>
-      </div>
-
+      <Carrousel/>   
       <section className="m-3">
         <h3 className="hero__title m-6 p-6 rounded-xl text-center">
           Novas alterações

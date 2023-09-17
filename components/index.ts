@@ -9,7 +9,7 @@ import CarCard from "./CarCard";
 import Cardetails from "./CarDetails";
 import ShowMore from "./ShowMore";
 import PerfilCard from "./PerfilCard";
-
+import Carrousel from './Carrousel'
 
 export {
     Hero,
@@ -23,4 +23,5 @@ export {
     CarCard,
     Cardetails,
     ShowMore,
+    Carrousel
 }
