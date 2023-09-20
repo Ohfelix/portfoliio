@@ -79,7 +79,7 @@ const navLinks = [
 ];
 
 export const footerLinks = [
-  {
+/*   {
     title: "About",
     links: [
       { title: "How it works", url: "/" },
@@ -87,7 +87,7 @@ export const footerLinks = [
       { title: "Partnership", url: "/" },
       { title: "Bussiness Relation", url: "/" },
     ],
-  },
+  }, */
   {
     title: "Company",
     links: [

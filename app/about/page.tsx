@@ -26,13 +26,12 @@ const About = () => {
         <p
           className="hero__subtitle text-center bg-opacity-70"
           style={textBackgroundStyle}
-        >
-          A pouco tempo comecei as aulas de jiu-jitsu, e gostaria de
+        >          A pouco tempo comecei as aulas de jiu-jitsu, e gostaria de
           compartilhar minhas primeiras impressões e dicas para aqueles que se
           interessam ou têm dúvidas sobre!
         </p>
       </div>
-      <Carrousel/>   
+      <Carrousel />   
       <section className="m-3">
         <h3 className="hero__title m-6 p-6 rounded-xl text-center">
           Novas alterações
