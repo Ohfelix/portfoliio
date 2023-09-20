@@ -44,7 +44,7 @@ const Hero = () => {
             <img src="node.png" alt="" />
           </div>
           <div className="w-[80px]">
-            <img src="mongodb.webp" alt="" />
+            <img src="mongodb.png" alt="" />
           </div>
           <div className="w-[80px]">
             <img src="git.png" alt="" />
