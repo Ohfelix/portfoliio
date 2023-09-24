@@ -34,7 +34,7 @@ const NavBar = () => {
 
   const menuLinks = [
     { href: "/", text: "Home" },
-    { href: "/about", text: "Sobre" },
+    { href: "/about", text: "Blog" },
     { href: "/contact", text: "Contato" },
     { href: "/project", text: "Projetos" },
   ];
@@ -81,7 +81,7 @@ const NavBar = () => {
           </div>
           <ul className="mt-8 space-y-4">
             {menuLinks.map((link, index) => (
-              <li className="cursor-pointer ml-10 uppercase border-b border-white hover:border-[#F68519] text-xl" key={index}>
+              <li className="cursor-pointer ml-10 uppercase border-b border-white hover:border-[#4664dc] text-xl" key={index}>
                 <Link href={link.href} onClick={closeMobileMenu}>{link.text}</Link>
               </li>
             ))}

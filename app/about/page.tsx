@@ -32,11 +32,11 @@ const About = () => {
         </p>
       </div>
       <Carrousel />   
-      <section className="m-3">
+   {/*    <section className="m-3">
         <h3 className="hero__title m-6 p-6 rounded-xl text-center">
           Novas alterações
         </h3>
-      </section>
+      </section> */}
     </div>
   );
 };

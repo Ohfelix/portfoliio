@@ -1,29 +1,32 @@
 import React from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
+import { motion, useScroll } from "framer-motion";
 
 const Carrousel = () => {
+  const { scrollYProgress } = useScroll();
   return (
     <>
-      <Carousel
-        className="flex"
-        autoPlay
-        infiniteLoop
-        showThumbs={false}
-        interval={5000}
-      >
-        <div className="p-8">
-          <img className="w-[200px]" src="jiujitso.jpg" />
+      <Carousel>
+        <div className="p-4">
+          <img className="w-200" src="jiujitso.jpg" />
         </div>
         <div className="p-4">
-          <img className="w-[200px]" src="kimono.jpg" />
+          <img className="w-200" src="kimono.jpg" />
         </div>
         <div className="p-4">
-          <img className="w-[200px]" src="alimentação.jpg" />
+          <img src="alimentação.jpg" />
         </div>
       </Carousel>
-      <div className="text-center p-4">
-        <h2 className="text-4xl pb-4 font-bold">Escolher uma boa academia</h2>
+      <motion.div
+        variants={{
+          hidden: { opacity: 0, y: 75 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        initial="hidden"
+        animate="visible"
+        transition={{ duration: 0.5, delay: 0.25 }}
+      >
+        <h2 className="text-center text-4xl p-4 font-bold">Escolher uma boa academia</h2>
         <p className="text-2xl p-3">
           {" "}
           Escolher uma boa academia de jiu-jitsu é fundamental porque oferece
@@ -32,7 +35,7 @@ const Carrousel = () => {
           estruturada, foco na segurança e uma reputação sólida. Isso assegura
           uma experiência de aprendizado eficaz e gratificante no jiu-jitsu.
         </p>
-        <h2 className="text-4xl pb-4 font-bold">
+        <h2 className="text-center text-4xl p-4 font-bold">
           Kimonos, tenha 2 de preferência !
         </h2>
         <p className="text-2xl p-3">
@@ -45,7 +48,7 @@ const Carrousel = () => {
           Kimonos de cor escura como Preto ou Azul, lembrando que se academia
           for muito tradicional, não é permitido !
         </p>
-        <h2 className="text-4xl pb-4 font-bold">
+        <h2 className="text-center text-4xl p-4 font-bold">
           Mantenha uma alimentação saudavel!
         </h2>
         <p className="text-2xl p-3">
@@ -58,7 +61,7 @@ const Carrousel = () => {
           que funciona melhor para você e ajuste sua alimentação pré-treino
           conforme necessário.
         </p>
-      </div>
+      </motion.div>
     </>
   );
 };

@@ -1,9 +1,5 @@
 "use client";
 import { motion } from "framer-motion";
-import Image from "next/image";
-
-import { CustomButton } from "@components";
-import { Carousel } from "react-responsive-carousel";
 
 const Hero = () => {
   const handleScroll = () => {
@@ -15,9 +11,9 @@ const Hero = () => {
   };
 
   return (
-    <div className="hero">
+    <div className="">
       <div className="flex-1 pt-36 padding-x">
-        <h1 className="hero__title">Portfolio, Projetos e outros !</h1>
+        <h1 className="hero__title text-center p-2">Portfolio, Projetos e outros !</h1>
         <p className="hero__subtitle">
           " Sou Leandro, um entusiasta de tecnologia de 32 anos, formado em
           técnico em automação e atualmente no segundo semestre do curso de
@@ -26,37 +22,50 @@ const Hero = () => {
           conhecimento em engenharia de software para criar soluções inovadoras
           e eficientes. Estou constantemente em busca de aprimorar minhas
           habilidades e explorar as fronteiras em constante evolução da
-          tecnologia. Junte-se a mim nesta jornada emocionante de descobertas
-          tecnológicas!"
+          tecnologia. "
         </p>
       </div>
 
-      <section className="items-center">
-        <h1 className="hero__title text-center p-2">Principais tecnologias !</h1>
-        <div className="flex p-3 space-x-6">
-          <div className="w-[80px]">
-            <img src="javascript.png" alt="" />
+      <section className="items-center p-2">
+        <div className="flex-1 pt-36 padding-x">
+          <h1 className="hero__title text-center p-2">
+            Principais <span className="text-blue-600">Tecnologias !</span> 
+          </h1>
+          <div className="flex justify-center p-5 space-x-6">
+            <div className="w-[80px]">
+              <img src="javascript.png" alt="" />
+            </div>
+            <div className="w-[80px]">
+              <img src="react.png" alt="" />
+            </div>
+            <div className="w-[80px]">
+              <img src="node.png" alt="" />
+            </div>
+            <div className="w-[80px]">
+              <img src="mongodb.png" alt="" />
+            </div>
+            <div className="w-[80px]">
+              <img src="git.png" alt="" />
+            </div>
           </div>
-          <div className="w-[80px]">
-            <img src="react.png" alt="" />
-          </div>
-          <div className="w-[80px]">
-            <img src="node.png" alt="" />
-          </div>
-          <div className="w-[80px]">
-            <img src="mongodb.png" alt="" />
-          </div>
-          <div className="w-[80px]">
-            <img src="git.png" alt="" />
-          </div>
-        </div>
+          <p className="hero__subtitle p-4">
+            "Minha jornada no mundo do desenvolvimento de software me levou a
+            uma paixão pelo stack <span className="font-black">MERN.</span>  Como entusiasta de tecnologia, encontrei
+            na combinação de MongoDB, Express, React e Node.js a base perfeita
+            para criar aplicações web modernas e escaláveis. A flexibilidade do
+            MongoDB, a agilidade do Node.js, a elegância do Express e a riqueza
+            de recursos do React me permitem criar experiências de usuário
+            incríveis e sistemas robustos. Estou constantemente explorando as
+            possibilidades que essa stack oferece e empolgado em aplicar meu
+            conhecimento para impulsionar projetos inovadores."
+          </p>
 
-        {/*       <Carousel className="flex" autoPlay infiniteLoop showThumbs={false} interval={5000}>
+          {/*       <Carousel className="flex" autoPlay infiniteLoop showThumbs={false} interval={5000}>
           <div className="flex p-3 w-40 h-60">
             <img src="javascript.png" />
             <p className="p-2">Javascript</p>
-          </div>
-          <div className="flex p-3 w-40 h-60">
+            </div>
+            <div className="flex p-3 w-40 h-60">
             <img src="html.png" />
             <p className="p-2">Html</p>
           </div>
@@ -74,8 +83,9 @@ const Hero = () => {
           <div className="flex p-3 w-40 h-60">
             <img src="react.png" />
             <p className="p-2">React.js</p>
-          </div>
-        </Carousel> */}
+            </div>
+          </Carousel> */}
+        </div>
       </section>
     </div>
   );
