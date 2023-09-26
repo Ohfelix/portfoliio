@@ -24,7 +24,7 @@ const About = () => {
           <span className="text-blue-500">Jiu-Jitsu!</span>
         </h1>
         <p
-          className="hero__subtitle text-center bg-opacity-70"
+          className="hero__subtitle bg-opacity-70 text-justify"
           style={textBackgroundStyle}
         >          A pouco tempo comecei as aulas de jiu-jitsu, e gostaria de
           compartilhar minhas primeiras impressões e dicas para aqueles que se

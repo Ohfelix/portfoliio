@@ -27,7 +27,7 @@ const Carrousel = () => {
         transition={{ duration: 0.5, delay: 0.25 }}
       >
         <h2 className="text-center text-4xl p-4 font-bold">Escolher uma boa academia</h2>
-        <p className="text-2xl p-3">
+        <p className="text-2xl p-3 text-justify">
           {" "}
           Escolher uma boa academia de jiu-jitsu é fundamental porque oferece
           instrutores qualificados, instalações adequadas, uma comunidade
@@ -38,7 +38,7 @@ const Carrousel = () => {
         <h2 className="text-center text-4xl p-4 font-bold">
           Kimonos, tenha 2 de preferência !
         </h2>
-        <p className="text-2xl p-3">
+        <p className="text-2xl p-3 text-justify">
           A escolha dos kimonos para apratica do esporte, tambem é muito
           importante pelo fato de que o esporte exige muito esforço fisico.
           então a tranmsiração é muita. E para manter a boa higiene e o conforto
@@ -51,7 +51,7 @@ const Carrousel = () => {
         <h2 className="text-center text-4xl p-4 font-bold">
           Mantenha uma alimentação saudavel!
         </h2>
-        <p className="text-2xl p-3">
+        <p className="text-2xl p-3 text-justify">
           Uma coisa que percebi, é que a alimentação é super importante pára
           manter um bom desempenho durante os treinos, no meu caso tenho que
           fazer a alimentação extamente 2 horas antes da pratica. Isso me mantem

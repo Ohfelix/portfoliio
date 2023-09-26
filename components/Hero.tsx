@@ -13,8 +13,10 @@ const Hero = () => {
   return (
     <div className="">
       <div className="flex-1 pt-36 padding-x">
-        <h1 className="hero__title text-center p-2">Portfolio, Projetos e outros !</h1>
-        <p className="hero__subtitle">
+        <h1 className="hero__title text-center p-2">
+          Portfolio, Projetos e outros !
+        </h1>
+        <p className="hero__subtitle text-justify">
           " Sou Leandro, um entusiasta de tecnologia de 32 anos, formado em
           técnico em automação e atualmente no segundo semestre do curso de
           engenharia de software. Minha paixão reside no desenvolvimento de
@@ -25,11 +27,10 @@ const Hero = () => {
           tecnologia. "
         </p>
       </div>
-
-      <section className="items-center p-2">
-        <div className="flex-1 pt-36 padding-x">
+      <section className="">
+        <div className="flex-1 pt-10 padding-x ">
           <h1 className="hero__title text-center p-2">
-            Principais <span className="text-blue-600">Tecnologias !</span> 
+            Principais <span className="text-blue-600">Tecnologias !</span>
           </h1>
           <div className="flex justify-center p-5 space-x-6">
             <div className="w-[80px]">
@@ -48,43 +49,21 @@ const Hero = () => {
               <img src="git.png" alt="" />
             </div>
           </div>
-          <p className="hero__subtitle p-4">
+          <p className="hero__subtitle text-justify">
             "Minha jornada no mundo do desenvolvimento de software me levou a
-            uma paixão pelo stack <span className="font-black">MERN.</span>  Como entusiasta de tecnologia, encontrei
-            na combinação de MongoDB, Express, React e Node.js a base perfeita
-            para criar aplicações web modernas e escaláveis. A flexibilidade do
-            MongoDB, a agilidade do Node.js, a elegância do Express e a riqueza
-            de recursos do React me permitem criar experiências de usuário
-            incríveis e sistemas robustos. Estou constantemente explorando as
-            possibilidades que essa stack oferece e empolgado em aplicar meu
-            conhecimento para impulsionar projetos inovadores."
+            uma paixão pelo stack <span className="font-black">MERN.</span> Como
+            entusiasta de tecnologia, encontrei na combinação de MongoDB,
+            Express, React e Node.js a base perfeita para criar aplicações web
+            modernas e escaláveis. A flexibilidade do MongoDB, a agilidade do
+            Node.js, a elegância do Express e a riqueza de recursos do React me
+            permitem criar experiências de usuário incríveis e sistemas
+            robustos. Estou constantemente explorando as possibilidades que essa
+            stack oferece e empolgado em aplicar meu conhecimento para
+            impulsionar projetos inovadores."
           </p>
-
-          {/*       <Carousel className="flex" autoPlay infiniteLoop showThumbs={false} interval={5000}>
-          <div className="flex p-3 w-40 h-60">
-            <img src="javascript.png" />
-            <p className="p-2">Javascript</p>
-            </div>
-            <div className="flex p-3 w-40 h-60">
-            <img src="html.png" />
-            <p className="p-2">Html</p>
-          </div>
-          <div className="flex p-3 w-40 h-60">
-            <img src="css.png" />
-            <p className="p-2">Css</p>
-          </div>
-          <div className="flex p-3 w-40 h-60">
-            <img src="git.png" />
-            <p className="p-2">Git</p>
-          </div>
-          <div className="flex p-3 w-40 h-60">
-            <img src="mongodb.webp" />        
-          </div>
-          <div className="flex p-3 w-40 h-60">
-            <img src="react.png" />
-            <p className="p-2">React.js</p>
-            </div>
-          </Carousel> */}
+        </div>
+        <div className="p-4">
+        
         </div>
       </section>
     </div>
